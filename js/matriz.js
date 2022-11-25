@@ -38,9 +38,37 @@ function SetString (lin,col,matriz){
     return matriz;
 }
 
+//
+function AdicionaOne(nome,matriz,lin,col){
+    for (i = 0; i < N; i++) {
+        for (j = 0; j < N; j++) {
+            if(matriz[i][j] = '')
+            {
+                matriz[i][j] = nome
+    
+            }
+        }
+    }
+    return matriz
+}
+
+//
+function RemoveOne(nome,matriz){
+    for (i = 0; i < N; i++) {
+        if(matriz[i][j] = nome)
+        {
+            matriz[i][j]= ''
+        }
+        
+    }
+    return matriz
+}
+
 module.exports={
     Create:Create,
     SetInt:SetInt,
     SetString:SetString,
+    AdicionaOne:AdicionaOne,
+    RemoveOne:RemoveOne,
 }
 

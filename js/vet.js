@@ -62,7 +62,27 @@ function OrganizaVet(vet, T) {
         }
     }
     return Vet2;
-    
+     
+}
+
+function AdicionaOne(nome,vet,N){
+    for (i = 0; i < N; i++) {
+        if(vet[i] = '')
+        {
+            vet[i] = nome
+        }
+    }
+    return vet
+}
+
+function RemoveOne(nome,vet,N){
+    for (i = 0; i < N; i++) {
+        if(vet[i] = nome)
+        {
+            vet[i]= ''
+        }
+    }
+    return matriz
 }
 
 module.exports = {
@@ -72,4 +92,6 @@ module.exports = {
     SetRadom:SetRadom,
     DuplicateVet:DuplicateVet,
     OrganizaVet:OrganizaVet,
+    AdicionaOne:AdicionaOne,
+    RemoveOne:RemoveOne,
 }
